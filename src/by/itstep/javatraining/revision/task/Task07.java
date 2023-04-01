@@ -38,6 +38,17 @@ package by.itstep.javatraining.revision.task;
 
 public class Task07 {
     public static int task07(int number) {
-        return 0;
+        int count = 0;
+        if (number < 0){
+            number = -number;
+        }
+        if (number > 9999) {
+            return 0;
+        }
+        while (number > 0){
+            count += number % 10;
+            number = number / 10;
+        }
+        return count;
     }
 }
