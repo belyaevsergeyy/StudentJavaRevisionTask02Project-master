@@ -53,6 +53,11 @@ package by.itstep.javatraining.revision.task;
 
 public class Task05 {
     public static String task05(int a, int b, int n) {
+        if (a >= 0 && b >= 0 && a + b !=0 && n > 0){
+            a = a * n + (b * n / 100);
+            b = b * n % 100;
+            return a + " " + b;
+        }
         return "error";
     }
 }
